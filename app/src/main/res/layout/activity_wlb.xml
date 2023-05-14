@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.WLBAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:letterSpacing="0.05"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/aqua_dark" />
+
+        <TextView
+            android:id="@+id/instructT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/note"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/instructT"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/vegetables"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" /> <!-- vegetables -->
+                <EditText
+                    android:id="@+id/vegetablesET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/stress"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- stress -->
+                <EditText
+                    android:id="@+id/stressET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/newPlace"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- newPlace -->
+                <EditText
+                    android:id="@+id/newPlaceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/people"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- people -->
+                <EditText
+                    android:id="@+id/peopleET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/helpedPeople"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- helpedPeople -->
+                <EditText
+                    android:id="@+id/helpedPeopleET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/interaction"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- interaction -->
+                <EditText
+                    android:id="@+id/interactionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/achievements"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- achievements -->
+                <EditText
+                    android:id="@+id/achievementsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/donations"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- donations -->
+                <EditText
+                    android:id="@+id/donationsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/BMI"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- BMI -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select"
+                    app:boxCornerRadiusBottomEnd="22dp"
+                    app:boxCornerRadiusBottomStart="22dp"
+                    app:boxCornerRadiusTopEnd="22dp"
+                    app:boxCornerRadiusTopStart="22dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/BMIACTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="none"
+                        android:textColor="@color/aqua" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/workCompletion"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- workCompletion -->
+                <EditText
+                    android:id="@+id/workCompletionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/actions"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- actions -->
+                <EditText
+                    android:id="@+id/actionsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/stepsWalks"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- stepsWalks -->
+                <EditText
+                    android:id="@+id/stepsWalksET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/liveVision"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- liveVision -->
+                <EditText
+                    android:id="@+id/liveVisionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sleepHours"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- sleepHours -->
+                <EditText
+                    android:id="@+id/sleepHoursET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/vacation"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- vacation -->
+                <EditText
+                    android:id="@+id/vacationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/anger"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- anger -->
+                <EditText
+                    android:id="@+id/angerET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/income"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- income -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select"
+                    app:boxCornerRadiusBottomEnd="22dp"
+                    app:boxCornerRadiusBottomStart="22dp"
+                    app:boxCornerRadiusTopEnd="22dp"
+                    app:boxCornerRadiusTopStart="22dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/incomeACTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="none"
+                        android:textColor="@color/aqua" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/awards"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- awards -->
+                <EditText
+                    android:id="@+id/awardsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/passionHours"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- passionHours -->
+                <EditText
+                    android:id="@+id/passionHoursET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/meditaionsHours"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- meditaionsHours -->
+                <EditText
+                    android:id="@+id/meditaionsHoursET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aqua"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/age"
+                    android:textColor="@color/aqua"
+                    android:textSize="16sp" />  <!-- age -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select"
+                    app:boxCornerRadiusBottomEnd="22dp"
+                    app:boxCornerRadiusBottomStart="22dp"
+                    app:boxCornerRadiusTopEnd="22dp"
+                    app:boxCornerRadiusTopStart="22dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ageACTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="none"
+                        android:textColor="@color/aqua" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/predictBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_bg"
+                    android:foreground="@drawable/ripple_effect"
+                    android:letterSpacing="0.08"
+                    android:text="Predict"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

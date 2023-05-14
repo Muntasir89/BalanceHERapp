@@ -1,0 +1,102 @@
+<resources>
+    <!-- Splash Screen -->
+    <string name="logo">rounded logo</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="have_account">Don\'t have an account?</string>
+    <string name="reg">Register</string>
+    <!-- Sign Up -->
+    <string name="signup">Sign Up</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile">Mobile No</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_confirmPass">Confirm password</string>
+    <!-- Mainactivity -->
+    <string name="app_name">BalanceHER</string>
+    <string name="header">Balance Your Work &amp; Life</string>
+    <string name="intro">Managing work and personal responsibilities can be a challenge, the app designed to help you achieve balance between you work and personal lives.</string>
+    <string name="find_out_card">Find Out</string>
+    <string name="emergencyCall">Doctors Info</string>
+    <string name="emergencyCallDesc">Find Mental Health Specialist</string>
+    <string name="complaints">Complaints</string>
+    <string name="complaintsDesc">Share complaints regarding the app</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="suggestionDesc">Some tips that help you be more balanced</string>
+    <!-- WLBAct -->
+    <string name="title">Check Your Work Life Balance</string>
+    <string name="note">*** Please, fill up by your data ***</string>
+
+    <string name="vegetables">1. How many fruits or vegetables do you eat everyday?</string>     <!--questions-->
+    <string name="stress">2. How much stress do you typically experience everyday?</string>
+    <string name="newPlace">3. How many new places do you visit?</string>
+    <string name="people">4. How many people are very close to you?</string>
+    <string name="helpedPeople">5. How many people do you hlep achieve a better life ?</string>
+    <string name="interaction">6. With how many people do you interact with during a typical day?</string>
+    <string name="achievements">7. How many remarkable achievements are you proud of?</string>
+    <string name="donations">8. How many times do you donate your time or money to good causes?</string>
+    <string name="BMI">9. What is your Body Mass Index(BMI) range?</string>
+    <string name="workCompletion">10. How many works do you complete in a day?</string>
+    <string name="actions">11. How many actions you have to complete in a day?</string>
+    <string name="stepsWalks">12. How many steps you walk in a day?</string>
+    <string name="liveVision">13. How many live vision do you have?</string>
+    <string name="sleepHours">14. How many hours do you sleep in a day?</string>
+    <string name="vacation">15. How many vacation you have lost recently?</string>
+    <string name="anger">16. How much anger do you typically express everyday?</string>
+    <string name="income">17. what is the range of your income?</string>
+    <string name="awards">18. How many awards or achievements do you have?</string>
+    <string name="passionHours">19. How many hours you spent in a week for passion?</string>
+    <string name="meditaionsHours">20. How many hours do you spent in a week for meditation, yoga etc?</string>
+    <string name="age">21. what is your age?</string>
+
+    <string name="hint">Enter</string>    <!--hint-->
+    <string name="hintSelect">Select</string>
+    <string name="helperText">Required</string>
+
+    <string name="success">Balanced</string> <!-- msge-->
+    <string name="success_msg">Congratulations! Your work life is balanced.</string>
+    <string name="failed">Imbalanced</string>
+    <string name="failed_msg">Sorry! Your work life is imbalanced unfortunately.</string>
+
+    <string name="go_back">Go Back</string> <!--Button-->
+    <string name="do_again">Do again</string>
+
+    <string name="doctor_name">Doctor Name</string>
+    <string name="doctor_esignation">Doctor Designation</string>
+    <string name="doctor_workplace">Doctor workplace</string>
+    <string name="contact_no">Doctor Contact no</string>
+
+    <!-- Suggestions -->
+    <string name="manage_stress">Manage Your Stress Levels</string>
+    <string name="manage_stress_desc">If you have a lot of stress in your life, find ways to reduce it, such as learning
+a few time-management techniques.Introduce regular exercise and time to yourself.
+These are positive changes. Taking control of your time in this way can effectively
+ reduce stress.</string>
+    <string name="enjoy_yourself">Enjoy Yourself</string>
+    <string name="enjoy_yourself_desc">Simple activities like watching sports with a friend, having a soak in the bath, or
+ meeting up with friends for coffee can all improve your day.</string>
+    <string name="self_esteem">Boost Your Self Esteem</string>
+    <string name="esteem_desc">Self\-esteem is the way you feel about yourself.The best way to improve your
+self-esteem is to treat yourself as you\'d treat a valued friend, in a positive.
+but honest way.</string>
+    <string name="enjoy_work">Enjoy Your Work</string>
+    <string name="enjoy_work_desc">Do what you love and love what you do? has become a popular catchphrase. While all
+work can be tedious or stressful at times, if you really hate your job or it’s
+making life impossible, consider changing jobs or even careers.</string>
+    <string name="finance">Consider Your Finances</string>
+    <string name="finance_desc">Do you really need a new car? Could you be happy living in a less expensive home or
+location? Research shows that once our basic needs are met, a higher income does
+not necessarily lead to happiness. Spending less money could mean fewer work hours 
+and more time for a rewarding life.</string>
+    <string name="nurture">Nurture Relationships</string>
+    <string name="nurture_desc">Positive relationships and social support help build resilience and help you cope
+with stress. But these take time to nurture and develop. Prioritise time with your
+family, friends, neighbours or loved ones.</string>
+    <string name="down_time">Have Down Time</string>
+    <string name="down_time_desc">Rest periods are just as important to success since they ‘recharge your batteries’.
+Schedule regular time off for yourself each week to read a book, play sport, spend
+time in nature or just do nothing. Choose any activity you enjoy.</string>
+    <!-- Emergency Calls -->
+    <string name="doctors_info">Doctors Information</string>
+</resources>

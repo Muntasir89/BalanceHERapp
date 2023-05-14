@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".Activity.LoginAct">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        android:src="@drawable/logo_round"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80">
+
+        <io.alterac.blurkit.BlurLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:blk_fps="0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/hint_name"
+                    android:importantForAutofill="no"
+                    android:minHeight="48dp"
+                    android:textColor="@color/soft_green"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/header" />
+
+                <EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/hint_email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:textColor="@color/soft_green"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/nameET" />
+
+                <EditText
+                    android:id="@+id/mobileNoET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/hint_mobile"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:textColor="@color/soft_green"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/emailET" />
+
+                <EditText
+                    android:id="@+id/passET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/hint_pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColor="@color/soft_green"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/mobileNoET" />
+
+                <EditText
+                    android:id="@+id/confirmPassET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/hint_confirmPass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColor="@color/soft_green"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/passET" />
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:foreground="@drawable/ripple_effect"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/signup"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmPassET"
+                    app:layout_constraintVertical_bias="0.45" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </io.alterac.blurkit.BlurLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

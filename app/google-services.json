@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336850365799",
+    "project_id": "balanceher-4981c",
+    "storage_bucket": "balanceher-4981c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336850365799:android:c753a3b650e08e3b1fd3c2",
+        "android_client_info": {
+          "package_name": "com.example.balanceher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336850365799-1iob5lpd0q3qllf2jlus1tdnoff0mb52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzBz13mGYT0LIJieonHyEEPpRObcWS_mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336850365799-1iob5lpd0q3qllf2jlus1tdnoff0mb52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
