@@ -15,23 +15,28 @@
         android:theme="@style/Base.Theme.BalanceHER"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.SplashScreenAct"
+            android:name=".Activity.TodoAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.SignupAct"
-            android:exported="true"></activity>
-        <activity
-            android:name=".Activity.LoginAct"
+            android:name=".Activity.SplashScreenAct"
             android:exported="true">
+
         </activity>
         <activity
-            android:name=".Activity.SuggestionsAct"
+            android:name=".Activity.SignupAct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginAct"
             android:exported="true"></activity>
+        <activity
+            android:name=".Activity.SuggestionsAct"
+            android:exported="true" />
         <activity
             android:name=".Activity.EmergCallAct"
             android:exported="true" />

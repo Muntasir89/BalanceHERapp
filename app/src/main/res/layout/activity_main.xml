@@ -70,7 +70,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/emergCallCard"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="10dp"
                 app:cardElevation="5dp"
                 app:cardCornerRadius="15dp"
@@ -96,13 +96,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/emergencyCallDesc"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="15dp"
                         android:layout_below="@+id/emergencyCallTV"
                         android:textColor="@color/black"/>
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_margin="10dp"
                         android:src="@drawable/em_call_img"
                         android:layout_alignParentRight="true"
@@ -114,7 +114,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/suggestionsCard"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5dp"
@@ -140,13 +140,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/suggestionDesc"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="15dp"
                         android:layout_below="@+id/suggestion"
                         android:textColor="@color/black"/>
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_margin="10dp"
                         android:src="@drawable/suggestion_img"
                         android:layout_alignParentRight="true"
@@ -157,7 +157,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/complaintsCard"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5dp"
@@ -183,14 +183,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/complaintsDesc"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="15dp"
                         android:layout_below="@+id/complaint"
                         android:textColor="@color/black"/>
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
@@ -199,6 +199,54 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/complaints_img" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/todoCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:backgroundTint="@android:color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightYellow">
+                    <TextView
+                        android:id="@+id/todo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/todo"
+                        android:textSize="25sp"
+                        android:textColor="@color/black_trans"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/todoDesc"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/todo"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_notifications" />
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>

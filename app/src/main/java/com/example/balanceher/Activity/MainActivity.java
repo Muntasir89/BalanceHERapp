@@ -10,15 +10,16 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.balanceher.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button homeBtn;
-    static Intent WLBIntent, emergCallIntent,suggestionsIntent, complaintIntent;
+    static Intent WLBIntent, emergCallIntent,suggestionsIntent, complaintIntent, todoIntent;
     static FirebaseAuth FAuthObj;
     FirebaseUser FUserObj;
-    CardView emergCallCard, complaintsCard, suggestionsCard;
+    CardView emergCallCard, complaintsCard, suggestionsCard, todoCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         emergCallCard = findViewById(R.id.emergCallCard);
         complaintsCard = findViewById(R.id.complaintsCard);
         suggestionsCard = findViewById(R.id.suggestionsCard);
+        todoCard = findViewById(R.id.todoCard);
 
         //Intent
         WLBIntent = new Intent(MainActivity.this, WLBAct.class);
@@ -41,12 +43,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         suggestionsIntent = new Intent(MainActivity.this, SuggestionsAct.class);
         complaintIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                 "mailto","balanceher99@email.com", null));
+        todoIntent = new Intent(MainActivity.this, TodoAct.class);
 
         //Adding clickListener
         homeBtn.setOnClickListener(this);
         emergCallCard.setOnClickListener(this);
         complaintsCard.setOnClickListener(this);
         suggestionsCard.setOnClickListener(this);
+        todoCard.setOnClickListener(this);
 
         //Firebase
         FAuthObj = FirebaseAuth.getInstance();
@@ -73,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(suggestionsIntent);
         }else if(v.getId() == R.id.complaintsCard){
             processComplaints();
+        }else if(v.getId() == R.id.todoCard){
+            startActivity(todoIntent);
         }
     }
 

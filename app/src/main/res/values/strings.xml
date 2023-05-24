@@ -24,6 +24,8 @@
     <string name="complaintsDesc">Share complaints regarding the app</string>
     <string name="suggestion">Suggestion</string>
     <string name="suggestionDesc">Some tips that help you be more balanced</string>
+    <string name="todo">Add Task</string>
+    <string name="todoDesc">Add your task and get notify</string>
     <!-- WLBAct -->
     <string name="title">Check Your Work Life Balance</string>
     <string name="note">*** Please, fill up by your data ***</string>
@@ -99,4 +101,10 @@ Schedule regular time off for yourself each week to read a book, play sport, spe
 time in nature or just do nothing. Choose any activity you enjoy.</string>
     <!-- Emergency Calls -->
     <string name="doctors_info">Doctors Information</string>
+
+    <!-- TodoAct -->
+    <string name="note_dia_title">Insert Task Info</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_desc">Description</string>
+
 </resources>

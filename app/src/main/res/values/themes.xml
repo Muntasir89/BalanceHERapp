@@ -19,4 +19,12 @@
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
+
+    <style name="ProgressBarStyle" parent="android:Widget.ProgressBar">
+        <item name="colorControlNormal">@color/green</item> <!-- Set your desired color here -->
+    </style>
+
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:background">@color/white</item>
+    </style>
 </resources>
