@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import com.example.balanceher.R;
+import com.example.balanceher.Interface.NoteInsUpdInterface;
 import com.example.balanceher.databinding.NoteInsertDiaLayBinding;
 
 
@@ -23,7 +22,13 @@ public class NoteInsertDia extends DialogFragment {
     private static String titleStr, desStr, TimeStr;
     public static Boolean isAdd;
 
-    NoteDiaInterface noteDiaInterface;
+    NoteInsUpdInterface noteDiaInterface;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        noteDiaInterface = (NoteInsUpdInterface) context;
+    }
 
     public NoteInsertDia(Boolean isadd){
         isAdd = isadd;
@@ -39,14 +44,14 @@ public class NoteInsertDia extends DialogFragment {
         binding = NoteInsertDiaLayBinding.inflate(getLayoutInflater());
         dialogBuilder.setView(binding.getRoot());
 
-        binding.imgClose.setOnClickListener(new View.OnClickListener() {
+        binding.imgClose.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 dismiss();
             }
         });
 
-        binding.addBtn.setOnClickListener(new View.OnClickListener() {
+        binding.addBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 processAddNote();
@@ -67,18 +72,8 @@ public class NoteInsertDia extends DialogFragment {
         }
     }
 
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-
-        noteDiaInterface = (NoteDiaInterface) context;
-    }
 
     public static Boolean getIsAdd() {
         return isAdd;
-    }
-
-    public interface NoteDiaInterface{
-        void getData(String title, String desc);
     }
 }
