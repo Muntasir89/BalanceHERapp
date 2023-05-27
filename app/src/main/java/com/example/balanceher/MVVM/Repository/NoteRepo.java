@@ -1,5 +1,6 @@
 package com.example.balanceher.MVVM.Repository;
 
+import android.app.AlarmManager;
 import android.app.Application;
 import android.os.AsyncTask;
 
@@ -14,6 +15,9 @@ import java.util.List;
 public class NoteRepo {
     private NoteDao noteDao;
     private LiveData<List<Note>> noteList;
+
+    public static Note tempNote;
+    public static AlarmManager alarmManager;
 
     public NoteRepo(Application application){
         NoteDatabase noteDatabase = NoteDatabase.getInstance(application);
@@ -32,18 +36,20 @@ public class NoteRepo {
         public InsertTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }
-
         @Override
-        protected Void doInBackground(Note... notes) {
-            noteDao.insert(notes[0]);
-            return null;
-        }
+        protected Void doInBackground(Note... notes) { noteDao.insert(notes[0]); return null; }
     }
     private static class DeleteTask extends AsyncTask<Note, Void, Void>{
         private NoteDao noteDao;
 
         public DeleteTask(NoteDao noteDao) {
             this.noteDao = noteDao;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
         }
 
         @Override

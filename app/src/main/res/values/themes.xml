@@ -27,4 +27,13 @@
     <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
         <item name="android:background">@color/white</item>
     </style>
+
+    <style name="TimePickerTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:colorAccent">@color/aqua</item>
+        <item name="android:colorPrimary">@color/aqua</item>
+        <item name="colorSecondary">@color/aqua</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="buttonBarPositiveButtonStyle">@color/aqua</item>
+        <item name="buttonBarNegativeButtonStyle">@color/aqua</item>
+    </style>
 </resources>

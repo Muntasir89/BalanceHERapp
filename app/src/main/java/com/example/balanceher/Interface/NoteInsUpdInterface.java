@@ -1,5 +1,5 @@
 package com.example.balanceher.Interface;
 
 public interface NoteInsUpdInterface {
-    void getData(String title, String desc);
+    void getData(String title, String desc, long milliseconds);
 }

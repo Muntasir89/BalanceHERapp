@@ -21,11 +21,20 @@ import com.example.balanceher.MVVM.Model.Note;
 import com.example.balanceher.R;
 import com.example.balanceher.databinding.TodoCardBinding;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
 public class TodoAdapter extends ListAdapter<Note, TodoAdapter.ItemViewHolder> {
+    SimpleDateFormat timeFormat;
+
     NoteDeleteInterface noteDeleteInterface;
     public TodoAdapter(Context context) {
         super(DiffCallback);
         noteDeleteInterface = (NoteDeleteInterface)  context;
+        //Initialization of timeFormat to convert millisec -> TimeFormat
+        timeFormat = new SimpleDateFormat("hh:mm a");
+        timeFormat.setTimeZone(TimeZone.getDefault());
     }
 
     @NonNull
@@ -56,6 +65,7 @@ public class TodoAdapter extends ListAdapter<Note, TodoAdapter.ItemViewHolder> {
         void bind(Note note){
             binding.titleTV.setText(note.getTitle());
             binding.detailsTV.setText(note.getDetails());
+            binding.timeTV.setText(timeFormat.format(new Date(note.getMilliseconds())));
             //clickListener
             binding.moreBtn.setOnClickListener(this);
         }

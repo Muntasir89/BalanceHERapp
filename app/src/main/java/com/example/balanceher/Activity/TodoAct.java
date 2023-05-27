@@ -74,9 +74,9 @@ public class TodoAct extends AppCompatActivity implements NoteInsUpdInterface, N
     }
 
     @Override
-    public void getData(String title, String desc) {
+    public void getData(String title, String desc, long millisecons) {
         if (isAdd) {
-            Note note = new Note(title, desc);
+            Note note = new Note(title, desc, millisecons);
             //note.setId(data.getIntExtra("id", 0));
             noteViewModel.insert(note);
         } else {

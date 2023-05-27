@@ -107,4 +107,6 @@ time in nature or just do nothing. Choose any activity you enjoy.</string>
     <string name="hint_title">Title</string>
     <string name="hint_desc">Description</string>
 
+    <!-- NoteDiaLayout-->
+    <string name="time">Set Time and Date</string>
 </resources>
