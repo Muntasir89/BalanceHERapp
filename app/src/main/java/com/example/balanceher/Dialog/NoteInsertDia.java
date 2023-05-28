@@ -95,6 +95,7 @@ public class NoteInsertDia extends DialogFragment implements View.OnClickListene
         c.set(Calendar.HOUR_OF_DAY, hourOfDay);
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
         //Converting the time to milliseconds
         milliseconds = c.getTimeInMillis();
 

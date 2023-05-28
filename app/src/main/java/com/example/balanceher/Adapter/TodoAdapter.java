@@ -46,7 +46,7 @@ public class TodoAdapter extends ListAdapter<Note, TodoAdapter.ItemViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position){
         Note note = getItem(position);
         holder.bind(note);
     }

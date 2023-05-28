@@ -77,7 +77,7 @@ public class TodoAct extends AppCompatActivity implements NoteInsUpdInterface, N
     public void getData(String title, String desc, long millisecons) {
         if (isAdd) {
             Note note = new Note(title, desc, millisecons);
-            //note.setId(data.getIntExtra("id", 0));
+            note.schedule(this);        //Setting up the alarm
             noteViewModel.insert(note);
         } else {
             //Update Note
